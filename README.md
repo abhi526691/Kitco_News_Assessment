@@ -1,0 +1,1 @@
+# Kitco_News_Assessment
