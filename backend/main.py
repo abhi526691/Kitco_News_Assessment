@@ -240,8 +240,7 @@ async def get_article(article_id: str):
 
     except Exception as e:
         # Log any unexpected errors
-        logger.error(f"Error fetching article {
-                     article_id}: {str(e)}", exc_info=True)
+        logger.error(f"Error fetching article {article_id}: {str(e)}", exc_info=True)
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="An error occurred while fetching the article"
@@ -323,8 +322,7 @@ async def update_article(article_id: str, article: ArticleUpdate):
 
     except Exception as e:
         # Log any unexpected errors
-        logger.error(f"Error updating article {
-                     article_id}: {str(e)}", exc_info=True)
+        logger.error(f"Error updating article {article_id}: {str(e)}", exc_info=True)
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="An error occurred while updating the article"
@@ -380,8 +378,7 @@ async def delete_article(article_id: str):
 
     except Exception as e:
         # Log any unexpected errors
-        logger.error(f"Error deleting article {
-                     article_id}: {str(e)}", exc_info=True)
+        logger.error(f"Error deleting article {article_id}: {str(e)}", exc_info=True)
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="An error occurred while deleting the article"
