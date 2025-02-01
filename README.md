@@ -2,6 +2,10 @@
 
 A full-stack web application for managing articles, built with **React (TypeScript)** on the frontend and **FastAPI + MongoDB** on the backend.
 
+Here's the hosted link for SWaggerAPI and Frontend as well
+ - https://kitco-news-assessment-2.onrender.com/docs  (SWAGGERAPI)  <br>
+ - https://kitco-news-assessment-4.onrender.com/      (FRONTEND)
+
 ---
 
 ## 📌 Project Overview
