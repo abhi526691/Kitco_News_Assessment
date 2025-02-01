@@ -1,0 +1,160 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .contentPreview {
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    animation: slideDown 0.3s ease;
+  }
+  
+  @keyframes slideDown {
+    from {
+      max-height: 0;
+      opacity: 0;
+    }
+    to {
+      max-height: 200px;
+      opacity: 1;
+    }
+  }
+  
+  .contentPreview p {
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  .viewButton {
+    padding: 5px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .viewButton:hover {
+    background-color: #45a049;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .createButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .meta {
+    color: #666;
+    font-size: 0.9em;
+    margin: 10px 0;
+  }
+  
+  .status {
+    padding: 4px 8px;
+    font-size: 0.875rem; /* 14px */
+    font-weight: 600;
+    border-radius: 4px;
+  }
+  
+  .draft {
+    background-color: #dbeafe; /* Light blue */
+    color: #1e40af; /* Dark blue */
+  }
+  
+  .published {
+    background-color: #dcfce7; /* Light green */
+    color: #166534; /* Dark green */
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .editButton {
+    padding: 5px 15px;
+    background-color: #FFC107;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .deleteButton {
+    padding: 5px 15px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .error {
+    color: #f44336;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .paginationButton {
+    padding: 8px 16px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .paginationButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .pageIndicator {
+    margin: 0 10px;
+    font-size: 16px;
+    color: #333;
+  }
