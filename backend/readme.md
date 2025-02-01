@@ -13,8 +13,6 @@ This is a RESTful API for managing articles, built with **FastAPI** and **MongoD
 5. [Request/Response Examples](#requestresponse-examples)
 6. [Error Handling](#error-handling)
 7. [Environment Variables](#environment-variables)
-8. [Testing](#testing)
-9. [License](#license)
 
 ---
 
