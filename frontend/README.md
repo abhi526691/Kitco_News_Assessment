@@ -1,50 +1,79 @@
-# React + TypeScript + Vite
+# React + TypeScript Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Overview
+This is a frontend application built using **React 18+** and **TypeScript**, styled with **Tailwind CSS**. The project follows a modular structure for maintainability and scalability.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- **React 18+** with functional components and hooks.
+- **TypeScript** for type safety and better development experience.
+- **State Management** using Context API/Zustand/Redux (if applicable).
+- **Form Validation** using React Hook Form / Zod.
+- **API Integration** with Axios and React Query.
+- **Error Handling & Loading States** for a smooth user experience.
+- **Responsive Design** ensuring usability across devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📁 Project Structure
+```
+├── src
+│   ├── components       # Reusable UI components
+│   ├── pages            # Page-level components
+│   ├── types            # TypeScript types and interfaces
+│   ├── utils            # Helper functions and utilities
+│   ├── api              # API client code (Axios/React Query)
+│   ├── context          # Global state management (if applicable)
+│   ├── assets           # Static assets (icons, images, etc.)
+│   ├── main.tsx         # Entry point
+│   ├── App.tsx          # Root component
+│   ├── router.tsx       # React Router configuration (if applicable)
+│
+├── public               # Static files (index.html, favicon, etc.)
+├── .env                 # Environment variables
+├── tsconfig.json        # TypeScript configuration
+├── tailwind.config.js   # Tailwind CSS configuration
+├── package.json         # Dependencies and scripts
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🛠️ Installation & Setup
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/abhi526691/Kitco_News_Assessment
+cd your-repo-name
 ```
+
+### 2️⃣ Install Dependencies
+```sh
+yarn install  # or npm install
+```
+
+### 3️⃣ Configure Environment Variables
+Create a `.env` file in the root directory and add:
+```sh
+VITE_API_BASE_URL=http://localhost:8000
+```
+
+### 4️⃣ Run the Development Server
+```sh
+yarn dev  # or npm run dev
+```
+The app will be available at **http://localhost:5173** (default Vite port).
+
+## 🧪 Testing
+To run tests, use:
+```sh
+yarn test  # or npm run test
+```
+
+## 🔧 Build for Production
+```sh
+yarn build  # or npm run build
+```
+The production-ready files will be in the `dist/` directory.
+
+## 📜 License
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Feel free to modify and extend as needed! 🚀
+
