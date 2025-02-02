@@ -60,12 +60,24 @@ This project provides a seamless way to create, read, update, and delete article
 
 ### Backend
 ```
-├── app
-│   ├── main.py          # Application entry point
-│
-├── .env                 # Environment variables
-├── requirements.txt     # Python dependencies
-├── Dockerfile           # Containerization setup (if needed)
+│── backend/
+│   ├── api/
+│   │   ├── routes/
+│   │   │   ├── articles.py
+│   │   │   ├── __init__.py
+│   │   ├── middleware.py
+│   ├── core/
+│   │   ├── config.py
+│   │   ├── logging_config.py
+│   ├── db/
+│   │   ├── database.py
+│   │   ├── models.py
+│   ├── schemas/
+│   │   ├── article.py
+│   ├── main.py
+│── .env
+│── requirements.txt
+│── README.md
 ```
 
 ---
