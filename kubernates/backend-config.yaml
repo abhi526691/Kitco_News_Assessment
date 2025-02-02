@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-config
+data:
+  MONGODB_URL: "<MONGODB_URL>" # Use MongoDB service name
+  DATABASE_NAME: "article_db"
