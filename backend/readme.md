@@ -65,7 +65,7 @@ pip install -r requirements.txt
 3. Set up environment variables:<br>
    Create a .env file in the root directory:
    ```bash
-   MONGODB_URL=mongodb+srv://username:password.qdpo3.mongodb.net/db_name?retryWrites=true&w=majority&appName=speer
+   MONGODB_URL=mongodb+srv://username:password.qdpo3.mongodb.net/db_name?retryWrites=true&w=majority&appName=<your_app_name>
    ```
 4. Run the application:
    
