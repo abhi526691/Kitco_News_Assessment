@@ -15,7 +15,7 @@ This project provides a seamless way to create, read, update, and delete article
 
 ## 🚀 Features
 
-### Frontend
+### Frontend:-
 - **React 18+** with functional components and hooks.
 - **TypeScript** for type safety and better development experience.
 - **State Management** using Context API/Zustand/Redux (if applicable).
@@ -24,7 +24,7 @@ This project provides a seamless way to create, read, update, and delete article
 - **Error Handling & Loading States** for a smooth user experience.
 - **Responsive Design** ensuring usability across devices.
 
-### Backend
+### Backend:-
 - **FastAPI** as the web framework.
 - **MongoDB** as the NoSQL database.
 - **Pydantic** for data validation.
@@ -86,8 +86,8 @@ This project provides a seamless way to create, read, update, and delete article
 
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/abhi526691/Kitco_News_Assessment
+cd Kitco_News_Assessment
 ```
 
 ### 2️⃣ Backend Setup
